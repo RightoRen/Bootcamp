@@ -1,4 +1,3 @@
-
 <h1>Bootcamp - Student Showcase</h1>
 Industry Night Promotional Site
 
