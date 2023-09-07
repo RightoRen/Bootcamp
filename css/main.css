@@ -384,6 +384,13 @@ text-align: center;
 
 }
 
+#background-img {
+  background-image: url(http://www.placeholder.co/400x400);
+display: block;
+height:400px;
+;}
+  
+
 footer{
   background-color: black;
 }
