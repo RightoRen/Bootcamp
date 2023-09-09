@@ -21,12 +21,28 @@
    background-color: #65666A;
   }
  
-   h1, h2, h3, h4, h5{
+   h1, h3, h4, h5{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color:black;
+    color:#65666A
+  } 
+   h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:#B2282D; 
+    font-size: 26pt;
   }
+  h3{
+    font-size:24pt;
+  }
+h4{
+  font-size:22pt;
+}
 
+h5{
+  font-size:18pt;
+
+}
   header {
     background-color: white;
     padding: 0px;
@@ -35,13 +51,18 @@
   header a {
     display: inline-block;
     margin-right: 0px;
-    color: white;
+    color: #65666A;
   }
   article{
     text-align: left;
     display: block;
   }
+.logo{
 
+}
+.featured img {
+  border-radius: 50%;
+}
   /*hamburger*/
   #menuToggle {
   display: block;
@@ -360,6 +381,14 @@ li{
 float:left
 }
 
+.button a{
+  background-color: #DA2827;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
 @keyframes fade-in {
     0% {
       opacity: 0;
@@ -383,6 +412,9 @@ float:left
   padding: 30px;
 }
 
+.industry-night{
+  background-color: #E3E3E3;
+}
 /*testimonial*/
 .testimonials{
 background-color: gray;
@@ -416,3 +448,4 @@ footer li a{
   text-decoration: none;
   color: #fff;
 }
+
