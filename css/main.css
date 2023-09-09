@@ -47,6 +47,7 @@ h5{
     background-color: white;
     padding: 0px;
     border-bottom:solid #e1e2e8 3px;
+    margin-bottom: 5px;
   }
   header a {
     display: inline-block;
@@ -381,6 +382,37 @@ li{
 float:left
 }
 
+#l-fanshawe-logo{
+width:350px;
+ height:250px;
+ display: block;
+}
+
+/*search bar*/
+form {
+  display: block;
+  margin: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 16pt;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*main content*/
+
 .button a{
   background-color: #DA2827;
   color: white;
@@ -444,7 +476,8 @@ text-align: center;
   background-image: url(http://www.placeholder.co/400x400);
 display: block;
 height:400px;
-;}
+}
+
   
 
 footer{
