@@ -382,6 +382,7 @@ li{
 float:left
 }
 
+
 #l-fanshawe-logo{
 width:350px;
  height:250px;
@@ -412,7 +413,6 @@ button {
 }
 
 /*main content*/
-
 .button a{
   background-color: #DA2827;
   color: white;
@@ -477,8 +477,6 @@ text-align: center;
 display: block;
 height:400px;
 }
-
-  
 
 footer{
   background-color:#E3E3E3;
