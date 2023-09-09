@@ -18,7 +18,7 @@
   }
   nav {
    display: inline-block;
-   background-color: black;
+   background-color: #65666A;
   }
  
    h1, h2, h3, h4, h5{
@@ -28,8 +28,9 @@
   }
 
   header {
-    background-color: black;
+    background-color: white;
     padding: 0px;
+    border-bottom:solid #e1e2e8 3px;
   }
   header a {
     display: inline-block;
@@ -56,7 +57,7 @@
 
 #menuToggle a {
   text-decoration: none;
-  color: white;
+  color: #65666A;
   
   transition: color 0.3s ease;
 }
@@ -86,12 +87,12 @@
 #menuToggle span
 {
   display: block;
-  width: 40px;
-  height: 7px;
+  width: 45px;
+  height: 6px;
   margin-bottom: 5px;
   position: relative;
   
-  background: white;
+  background: #65666A;
   border-radius: 1px;
   
   z-index: 1;
@@ -121,7 +122,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
+  background: #65666A
 }
 
 /*to hide the middle line.*/
@@ -131,13 +132,20 @@
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
+#menuToggle input:checked ~ span:nth-last-child(4)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
 /*
  * last line in other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(5px, -3px);
+ }
+
 /*tablet version*/
 
 #t-menuToggle
@@ -156,7 +164,7 @@
 #t-menuToggle a
 {
   text-decoration: none;
-  color: white;
+  color: black;
   
   transition: color 0.3s ease;
 }
@@ -186,12 +194,12 @@
 #t-menuToggle span
 {
   display: block;
-  width: 40px;
+  width: 50px;
   height: 7px;
   margin-bottom: 5px;
   position: relative;
   
-  background: white;
+  background:#65666A;
   border-radius: 1px;
   
   z-index: 1;
@@ -220,8 +228,8 @@
 #t-menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
+  transform: rotate(45deg) translate(-2px, -2px);
+  background: #65666A;
 }
 
 /*to hide the middle line.*/
@@ -231,12 +239,18 @@
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
+/*to hide the middle line.*/
+#t-menuToggle input:checked ~ span:nth-last-child(4)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
 /*
  * last line in other direction
  */
 #t-menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(5px, -3px);
 }
 /*
  * Make this absolute positioned
@@ -248,18 +262,18 @@
   min-width:768px;
  max-width:1155px;
  height:800px;
-  margin: -100px 0 0px -80px;
+  margin: -100px 0 0px -780px;
   padding-left: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
   padding-top: 125px;
-  background:black;
+  background:white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.6s ease-in;
 }
@@ -269,16 +283,16 @@
   position:absolute;
   width:475px;
   height: 800px;
-   margin: -100px 0 0 -80px;
+   margin: -100px 0 0 -350px;   /*margin: -100px 0 0 600px;*/
    padding: 50px;
    padding-top: 125px;
-   background: black;
+   background: white;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text */
    
    transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
+   transform: translate(100%, 0);
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
@@ -288,13 +302,18 @@
 
 #menu-tablet li a
 {
-  padding: 24px 400px;
+  padding: 40px 300px;
   font-size: 24px;
+  border-top: solid grey 1px;
+  border-bottom: solid gray 1px;
 }
 #menu-mobile li a
 {
   padding: 15px 120px;
   font-size: 24px;
+  border-top: solid grey 1px;
+  border-bottom: solid gray 1px;
+
 }
 
 
@@ -312,7 +331,7 @@
 nav{
   display:block;
   padding: 0px;
-  background-color: black;
+  background-color: white;
 
 }
 ul{
@@ -333,7 +352,6 @@ transition:ease-in 0.2s;
 }
  
 nav a:hover{
-  border-bottom: solid white 3px;
   opacity: 70%;
 }
 li{
