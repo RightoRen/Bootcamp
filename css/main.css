@@ -388,7 +388,12 @@ float:left
   border-radius: 20px;
   text-decoration: none;
 }
-
+.square-button a{
+  background-color: #DA2827;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+}
 @keyframes fade-in {
     0% {
       opacity: 0;
@@ -417,11 +422,12 @@ float:left
 }
 /*testimonial*/
 .testimonials{
-background-color: gray;
-color: #fff;
-padding-top:100px;
-padding-bottom: 100px;
+color: #65666A;
+padding-top:30px;
+padding-bottom: 30px;
 padding-left: 100px;
+border:5px solid #65666A;
+border-radius: 40px;
 
 }
 .testimonials p{
@@ -429,7 +435,7 @@ text-align: left;
 }
 
 #reviewer p{
-color: white;
+color: #65666A;
 text-align: center;
 
 }
@@ -442,10 +448,15 @@ height:400px;
   
 
 footer{
-  background-color: black;
+  background-color:#E3E3E3;
+}
+footer ul li {
+  border-left:solid #65666A 7px;
 }
 footer li a{
-  text-decoration: none;
-  color: #fff;
+  color:#65666A;
+  display:block;
+  text-align: left;
+  
 }
 
