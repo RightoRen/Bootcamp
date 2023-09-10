@@ -517,3 +517,329 @@ footer li a{
   color:#3366CC;
 }
 
+
+/* AutoplayCarousel */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+}
+
+.hidden {
+    display: none
+}
+
+.contain-test {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.wrappertest {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrappertest i {
+    height: 50px;
+    width: 50px;
+    color: rgb(218, 40, 39);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+
+    /* this makes the icons go up by 50 each way */
+    top: 50%;
+    transform: translateY(-50%);
+    /* font sizes will effect icons from font awesome */
+    font-size: 4.25rem;
+    /* box-shadow: 0 3px 6px black; */
+    transition: transform 0.1s linear;
+}
+
+/* the first child is the first object in the hierarchy */
+
+.wrappertest i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+
+.wrappertest i:nth-child(2) {
+    left: -52px;
+}
+
+.wrappertest i:last-child {
+    right: -52px;
+}
+
+
+
+.fa-quote-left:first-child {
+    position: relative;
+    margin: 3px 10px 0 0;
+    top: 25%;
+    left: 100px;
+    }
+    
+
+.wrappertest .carouseltest {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carouseltest::-webkit-scrollbar {
+    display: none;
+}
+
+.carouseltest :where(.card, .imgtest) {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.carouseltest .cardtest {
+    scroll-snap-align: start;
+    border-radius: 80px;
+    border: solid 1px rgb(75, 75, 75);
+
+    max-width: 1747px;
+    height: 270px;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+
+.carouseltest.no-transition {
+scroll-behavior: auto;
+}
+
+
+.carouseltest.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carouseltest.dragging .cardtest {
+    cursor: grab;
+    user-select: none;
+}
+
+.cardtest .imgtest {
+    background-color: rgb(218, 40, 39);
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+
+.cardtest .imgtest img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+
+.cardtest .texttest {
+    margin-top: 30px;
+}
+
+.cardtest p {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.cardtest span {
+    font-style: italic;
+    color: rgb(82, 82, 82);
+    font-size: 1.01rem;
+}
+
+.cardtest .test-name {
+font-weight: 600;
+}
+
+.cardtest .grad {
+    font-style: normal;
+}
+
+/* tablet size makes it 100% width with only 2 of the carousel items showing */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100%) - 9px);
+    }
+}
+
+/* Mobile size makes carousel and its container scale to 100% of its width on mobile */
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/* End of Autoplay Carousel */
+
+/* Non Auto Carousel */
+
+body {
+    margin: 0;
+    padding: 0%;
+}
+
+.hidden {
+    display: none
+}
+
+.contain {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    color: rgb(218, 40, 39);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+
+    /* this makes the icons go up by 50 each way */
+    top: 50%;
+    transform: translateY(-50%);
+    /* font sizes will effect icons from font awesome */
+    font-size: 4.25rem;
+    /* box-shadow: 0 3px 6px black; */
+    transition: transform 0.1s linear;
+}
+
+/* the first child is the first object in the hierarchy */
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+
+.wrapper i:nth-child(2) {
+    left: -42px;
+}
+
+.wrapper i:last-child {
+    right: -42px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    /* below makes the page expand outwards making the cards be on a separate page almost */
+    grid-auto-columns: calc((100% / 3) -3px);
+    gap: 16px;
+    /* overflow hidden hides anything not within the pages og width */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* makes any scrolling smoother */
+    scroll-behavior: smooth;
+    /* never have this at 0 or it will show up */
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    align-items: start;
+    justify-content: start;
+}
+
+.carousel .card {
+    max-height: 320px;
+    scroll-snap-align: start;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel.no-transition {
+scroll-behavior: auto;
+}
+
+/* makes it so it will drag properly */
+
+.carousel.draggingAuto {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.draggingAuto .card {
+    cursor: grab;
+    /* stops you from highlight text or images */
+    user-select: none;
+}
+
+.card .img img {
+    border: solid 1px rgb(95, 95, 95);
+    width: 340px;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+/* tablet size makes it 100% width with only 2 of the carousel items showing */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2));
+    }
+}
+
+/* Mobile size makes carousel and its container scale to 100% of its width on mobile */
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
