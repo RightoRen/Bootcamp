@@ -24,13 +24,15 @@
    h1, h3, h4, h5{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color:#65666A
+    color:#65666A;
+    padding-bottom:5px;
   } 
    h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     color:#B2282D; 
     font-size: 26pt;
+    padding-bottom:5px;
   }
   h3{
     font-size:24pt;
@@ -58,7 +60,7 @@ h5{
     text-align: left;
     display: block;
   }
-.logo{
+p { text-align: left;
 
 }
 .featured img {
@@ -66,316 +68,332 @@ h5{
 }
   /*hamburger*/
   #menuToggle {
-  display: block;
-  position: relative;
-  top: 7px;
-  left: 20px;
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 20px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
   
-  z-index: 1;
+  #menuToggle a {
+    text-decoration: none;
+    color: #65666A;
+    
+    transition: color 0.3s ease;
+  }
   
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a {
-  text-decoration: none;
-  color: #65666A;
+  #menuToggle a:hover {
+    opacity: 0.7;
+  }
   
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  opacity: 0.7;
-}
-
-
-#menuToggle input{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
   
-  cursor: pointer;
+  #main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  #main-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+  }
   
-  -webkit-touch-callout: none;
-}
-
-/* makes the lines*/
-#menuToggle span
-{
-  display: block;
-  width: 45px;
-  height: 6px;
-  margin-bottom: 5px;
-  position: relative;
   
-  background: #65666A;
-  border-radius: 1px;
+  #menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+  }
   
-  z-index: 1;
+  /* makes the lines*/
+  #menuToggle span
+  {
+    display: block;
+    width: 45px;
+    height: 6px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #65666A;
+    border-radius: 1px;
+    
+    z-index: 1;
+    
+    transform-origin: 2px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
   
-  transform-origin: 2px 0px;
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the lines of hamburger
- * into an x.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #65666A
-}
-
-/*to hide the middle line.*/
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(4)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * last line in other direction
- */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(5px, -3px);
- }
-
-/*tablet version*/
-
-#t-menuToggle
-{
-  display: block;
-  position: relative;
-  top: 7px;
-  left: 25px;
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
   
-  z-index: 1;
+  /* 
+   * Transform all the lines of hamburger
+   * into an x.
+   */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #65666A
+  }
   
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#t-menuToggle a
-{
-  text-decoration: none;
-  color: black;
+  /*to hide the middle line.*/
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
   
-  transition: color 0.3s ease;
-}
-
-#t-menuToggle a:hover {
-  opacity: 0.7;
-}
-
-
-#t-menuToggle input{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+  #menuToggle input:checked ~ span:nth-last-child(4)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
   
-  cursor: pointer;
+  /*
+   * last line in other direction
+   */
+   #menuToggle input:checked ~ span:nth-last-child(2)
+   {
+     transform: rotate(-45deg) translate(5px, -3px);
+   }
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  /*tablet version*/
   
-  -webkit-touch-callout: none;
-}
-
-/* makes the lines*/
-#t-menuToggle span
-{
-  display: block;
-  width: 50px;
-  height: 7px;
-  margin-bottom: 5px;
-  position: relative;
+  #t-menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 25px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
   
-  background:#65666A;
-  border-radius: 1px;
+  #t-menuToggle a
+  {
+    text-decoration: none;
+    color: black;
+    
+    transition: color 0.3s ease;
+  }
   
-  z-index: 1;
+  #t-menuToggle a:hover {
+    opacity: 0.7;
+  }
   
-  transform-origin: 2px 0px;
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#t-menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#t-menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the lines of hamburger
- * into an x.
- */
-#t-menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -2px);
-  background: #65666A;
-}
-
-/*to hide the middle line.*/
-#t-menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*to hide the middle line.*/
-#t-menuToggle input:checked ~ span:nth-last-child(4)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-/*
- * last line in other direction
- */
-#t-menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(5px, -3px);
-}
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu-tablet{
-  display: block;
-  position:absolute;
-  min-width:768px;
- max-width:1155px;
- height:800px;
-  margin: -100px 0 0px -780px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  padding-top: 125px;
-  background:white;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text */
+  #t-menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+  }
   
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  /* makes the lines*/
+  #t-menuToggle span
+  {
+    display: block;
+    width: 50px;
+    height: 7px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background:#65666A;
+    border-radius: 1px;
+    
+    z-index: 1;
+    
+    transform-origin: 2px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
   
-  transition: transform 0.6s ease-in;
-}
-
-#menu-mobile{
-  display: block;
-  position:absolute;
-  width:475px;
-  height: 800px;
-   margin: -100px 0 0 -350px;   /*margin: -100px 0 0 600px;*/
-   padding: 50px;
-   padding-top: 125px;
-   background: white;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text */
-   
-   transform-origin: 0% 0%;
-   transform: translate(100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
-
-
-
-
-#menu-tablet li a
-{
-  padding: 40px 300px;
-  font-size: 24px;
-  border-top: solid grey 1px;
-  border-bottom: solid gray 1px;
-}
-#menu-mobile li a
-{
-  padding: 15px 120px;
-  font-size: 24px;
-  border-top: solid grey 1px;
-  border-bottom: solid gray 1px;
-
-}
-
-
-/*
- * And let's slide it in from the left
- */
-#t-menuToggle input:checked ~ ul{
-  transform: none;
-}
-
-#menuToggle input:checked ~ ul{
+  #t-menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #t-menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the lines of hamburger
+   * into an x.
+   */
+  #t-menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -2px);
+    background: #65666A;
+  }
+  
+  /*to hide the middle line.*/
+  #t-menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*to hide the middle line.*/
+  #t-menuToggle input:checked ~ span:nth-last-child(4)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+   * last line in other direction
+   */
+  #t-menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(5px, -3px);
+  }
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu-tablet{
+    display: block;
+    position:absolute;
+    min-width:768px;
+   max-width:1155px;
+   height:800px;
+    margin: -100px 0 0px -1000px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-top: 125px;
+    background:white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.6s ease-in;
+  }
+  
+  #menu-mobile{
+    display: block;
+    position:absolute;
+    width:700px;
+    height: 800px;
+     margin: -100px 0 0 -650px;   /*margin: -100px 0 0 600px;*/
+     padding: 50px;
+     padding-top: 125px;
+     background: white;
+     list-style-type: none;
+     -webkit-font-smoothing: antialiased;
+     /* to stop flickering of text */
+     
+     transform-origin: 0% 0%;
+     transform: translate(-100%, 0);
+     
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   }
+  
+  
+   #menu-tablet li{
+    padding-top: 0px;
+   }
+  
+  #menu-tablet li a
+  {
+    padding: 40px 300px;
+    font-size: 24px;
+    border-top: solid grey 1px;
+    border-bottom: solid gray 1px;
+    
+  }
+  #menu-mobile li a
+  {
+    padding: 15px 120px;
+    font-size: 24px;
+  
+    border-bottom: solid gray 1px;
+  
+  }
+  
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #t-menuToggle input:checked ~ ul{
     transform: none;
   }
-/*end of burger*/
+  
+  #menuToggle input:checked ~ ul{
+      transform: none;
+    }
+  /*end of burger*/
 nav{
   display:block;
   padding: 0px;
   background-color: white;
-
 }
+
 ul{
   list-style-type: none;
   margin:0;
   padding: 0;
-
-
 }
+
 nav li a{
   font-size: 16pt;
 display: block;
 text-align: center;
 text-decoration: none;
 transition:ease-in 0.2s;
-
-
 }
  
 nav a:hover{
   opacity: 70%;
 }
+
 li{
   padding-left: 20px;
   padding-right: 20px;
@@ -411,8 +429,20 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-
 /*main content*/
+.text-decor {
+  border-top:solid #65666A 3px;
+  border-bottom: solid #65666A 3px;
+  font-weight: 600;
+  font-size: 28pt;
+  
+}
+.special-character{
+  font-size: 26pt;
+}
+.italics{
+  font-style: italic;
+}
 .button a{
   background-color: #DA2827;
   color: white;
@@ -452,6 +482,7 @@ button {
 .industry-night{
   background-color: #E3E3E3;
 }
+
 /*testimonial*/
 .testimonials{
 color: #65666A;
@@ -459,8 +490,11 @@ padding-top:30px;
 padding-bottom: 30px;
 padding-left: 100px;
 border:5px solid #65666A;
-border-radius: 40px;
+border-radius: 50px;
 
+}
+.testimonials{
+  font-style: italic;
 }
 .testimonials p{
 text-align: left;
@@ -468,26 +502,422 @@ text-align: left;
 
 #reviewer p{
 color: #65666A;
-text-align: center;
+font-weight: 600;
 
 }
 
-#background-img {
-  background-image: url(http://www.placeholder.co/400x400);
-display: block;
-height:400px;
+.box-nav {
+  background-color: #E3E3E3;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  color: rgb(27, 27, 27);
+  text-align: center;
+
+  /* border-left: solid 3px;
+  border-color: grey; */
+  padding-bottom: 20px;
 }
 
-footer{
+.box-icons{
+  display: inline;
+
+  background-color: #E3E3E3;
+  width: 50px;
+  color: rgb(27, 27, 27);
+}
+
+.icons {
+  border-bottom: black solid 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.text-show {
+  padding: 20px;
+  border: solid 1px gray;
+}
+
+.title-foot {
+  display: flex;
+  align-items: start;
+  margin-left: 0;
+  text-align: start;
+}
+
+footer {
+  border: solid gray 2px;
+}
+
+footer section {
   background-color:#E3E3E3;
 }
-footer ul li {
-  border-left:solid #65666A 7px;
-}
-footer li a{
-  color:#65666A;
-  display:block;
-  text-align: left;
-  
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:solid #65666A 5px;
 }
 
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E3E3E3;
+  margin-bottom: 10px;
+}
+
+nav .icons {
+  background-color: #E3E3E3;
+}
+
+footer li a{
+  font-size: 20px;
+  color:#3366CC;
+  display:block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color:#3366CC;
+  margin-right: 195px;
+}
+
+
+
+/* AutoplayCarousel */
+
+
+.hidden {
+    display: none
+}
+
+.contain-test {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.wrappertest {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrappertest i {
+    height: 50px;
+    width: 50px;
+    color: rgb(218, 40, 39);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+
+    /* this makes the icons go up by 50 each way */
+    top: 50%;
+    transform: translateY(-50%);
+    /* font sizes will effect icons from font awesome */
+    font-size: 4.25rem;
+    /* box-shadow: 0 3px 6px black; */
+    transition: transform 0.1s linear;
+}
+
+/* the first child is the first object in the hierarchy */
+
+.wrappertest i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+
+.wrappertest i:nth-child(2) {
+    left: -52px;
+}
+
+.wrappertest i:last-child {
+    right: -52px;
+}
+
+
+
+.fa-quote-left:first-child {
+    position: relative;
+    margin: 3px 10px 0 0;
+    top: 25%;
+    left: 100px;
+    }
+    
+
+.wrappertest .carouseltest {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carouseltest::-webkit-scrollbar {
+    display: none;
+}
+
+.carouseltest :where(.card, .imgtest) {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.carouseltest .cardtest {
+    scroll-snap-align: start;
+    border-radius: 80px;
+    border: solid 1px rgb(75, 75, 75);
+
+    max-width: 1100px;
+    height: 370px;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+
+.carouseltest.no-transition {
+scroll-behavior: auto;
+}
+
+
+.carouseltest.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carouseltest.dragging .cardtest {
+    cursor: grab;
+    user-select: none;
+}
+
+.cardtest .imgtest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: rgb(218, 40, 39);
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+
+.cardtest .imgtest img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 1px white;
+    
+}
+
+article .texttest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+.cardtest p {
+  
+    display: flex;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.cardtest span {
+    font-style: italic;
+    color: rgb(82, 82, 82);
+    font-size: 1.01rem;
+}
+
+.cardtest .test-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+font-weight: 600;
+}
+
+.cardtest .grad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+    font-style: normal;
+}
+
+/* tablet size makes it 100% width with only 2 of the carousel items showing */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100%) - 9px);
+    }
+}
+
+/* Mobile size makes carousel and its container scale to 100% of its width on mobile */
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/* End of NonAutoplay Carousel */
+
+/* Auto Carousel */
+
+body {
+    margin: 0;
+    padding: 0%;
+}
+
+.hidden {
+    display: none
+}
+
+.contain {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px;
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper i {
+  height: 50px;
+  width: 50px;
+  color: rgb(218, 40, 39);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4.25rem;
+  transition: transform 0.1s linear;
+}
+
+/* the first child is the first object in the hierarchy */
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:nth-child(2) {
+    left: -42px;
+}
+
+.wrapper i:last-child {
+    right: -42px;
+}
+
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) -9px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    align-items: start;
+    justify-content: start;
+}
+
+.carousel .card {
+    max-height: 320px;
+    scroll-snap-align: start;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+}
+
+.carousel.no-transition {
+scroll-behavior: auto;
+}
+
+/* makes it so it will drag properly */
+
+.carousel.draggingAuto {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.draggingAuto .card {
+    cursor: grab;
+    /* stops you from highlight text or images */
+    user-select: none;
+}
+
+.card .img {
+  width: 320px;
+  height: 280px;
+}
+
+.card .img img {
+    border: solid 1px rgb(95, 95, 95);
+    width: 340px;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+/* tablet size makes it 100% width with only 2 of the carousel items showing */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2));
+    }
+}
+
+/* Mobile size makes carousel and its container scale to 100% of its width on mobile */
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}

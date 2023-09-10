@@ -2,30 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="Viewport" content="width=device-width">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
         <title>Fanshawe</title>
         <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link href="css/grid.css" rel="stylesheet">
     </head>
      <body>
         <h1 class="hidden">Fanshawe Industry Night</h1>
 <header>
-    <div class="grid-con">
-        <div class="col-start-1 col-span-1 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 box">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="180" viewBox="0 0 670 273">
-                <defs>
-                  <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 396 161">
-                    <image width="396" height="161" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYwAAAChCAYAAADUfIgWAAAE/mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDMgNzkuMTYxMzU2LCAyMDE3LzA5LzA3LTAxOjExOjIyICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTA0LTAyVDEwOjM4OjAyLTA0OjAwIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmRjYzMwZWI3LTZjNTgtNGQ4MS1iN2FlLWU2YzRjMzRkNzkwMCIKICAgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpkY2MzMGViNy02YzU4LTRkODEtYjdhZS1lNmM0YzM0ZDc5MDAiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2MzMGViNy02YzU4LTRkODEtYjdhZS1lNmM0YzM0ZDc5MDAiPgogICA8ZGM6ZGVzY3JpcHRpb24+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPkZhbnNoYXdlIENvbGxlZ2UgQ2FuYWRhIExvZ288L3JkZjpsaT4K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"/>
-                  </pattern>
-                </defs>
-                <rect id="fanshawe-logo" width="670" height="273"  fill="url(#pattern)"/>
-              </svg>
+    <section class="grid-con">
+        <h2 class="hidden">Main Nav</h2>
+        <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-4">
+            <img class="logo" src="img/7C110AF5.png" alt="fanshawe logo">
         </div>
 
         <div class="mobile col-start-4 col-span-1 box">
             <nav>
                 <div id="menuToggle">
-                  <input type="checkbox" />
+                  <input type="checkbox">
              
                   <span></span>
                   <span></span>
@@ -34,8 +30,7 @@
                   
                   <ul class="mobile col-span-4 box" id="menu-mobile">
                    <li><a href="index.html">Home</a></li>
-                   <li><a href="#">STUDENT PORTFOLIO</a></li>
-                   <li><a href="#" target="_blank">PROJECTS</a></li>
+                   <li><a href="studentPage.html">STUDENT PORTFOLIO</a></li>
                   </ul>
                 </div>
               </nav>
@@ -43,59 +38,52 @@
             <div class="tablet m-col-span-2 m-col-start-11 box hamburger-icon ">
                 <nav>
                     <div id="t-menuToggle">
-                      <input type="checkbox"/>
+                      <input type="checkbox">
                  
                       <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
                       
-                      <ul class="tablet l-col-span-12 box" id="menu-tablet">
+                      <ul class="tablet l-col-span-12 menu-box">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">STUDENT PORTFOLIO</a></li>
-                   <li><a href="#" target="_blank">PROJECTS</a></li>
+                        <li><a href="studentPage.html">STUDENT PORTFOLIO</a></li>
                       </ul>
                     </div>
                   </nav>
                   </div>
-                  <div class="desktop l-col-span-4 box"> logo
-                </div>
-                  <nav class= "desktop l-col-start-5 l-col-span-6 box">
-                    <ul>
-                      <li><a href="#">HOME</a></li>
-                      <li><a href="#">STUDENT PORTFOLIO</a></li>
-                      <li><a href="#">PROJECTS</a></li>
+   
+            <nav class= "desktop l-col-start-5 l-col-end-10">
+                    <ul id="main-nav">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="studentPage.html">STUDENT PORTFOLIO</a></li>
                     </ul>
-                    </nav>
-      
-                    <div class="xldesktop xl-col-span-4 box"> logo
-                    </div>
-                  
-                <nav class="xldesktop xl-col-start-5 xl-col-span-4 box">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">STUDENT PORTFOLIO</a></li>
-                    <li><a href="#">PROJECTS</a></li>
+            </nav>
+            <nav class="xldesktop xl-col-start-5 l-col-end-10">
+                <ul id="main-nav2">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="studentPage.html">STUDENT PORTFOLIO</a></li>
                 </ul>
             </nav>
 
-            <div class="desktop l-col-start-11 l-col-span-2">
-            <form action="/search" method="get">
+            <div class="desktop l-col-start-10 l-col-end-12">
+            <form id="main-search" action="/search" method="get">
                 <input type="text" name="q" id="search" placeholder="Search...">
               </form>
             </div>
-            <div class="xldesktop xl-col-start-11 xl-col-span-2">
-                <form action="/search" method="get">
+            <div class="xldesktop xl-col-start-10 xl-col-end-12">
+                <form id="main-search2" action="/search" method="get">
                     <input type="text" name="q" id="searchxl" placeholder="Search...">
                   </form>
                 </div>
-            </div>
+        </section>
             </header>
             <section class="grid-con">
+                <h2 class="hidden"> video</h2>
               <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-                <h2 class="video">Video/Hero
-                  <img src="https://www.placeholder.co/1980x800" alt="placeholder">
-                </h2>
+                <video controls> 
+                    <source src="img/promo-video.mp4" type=video/mp4 >
+                  </video>
                 </div>
             </section>
         <section class="grid-con">
@@ -104,15 +92,16 @@
                 <p>Introducing our Interactive Media Design Program, where creativity knows no bounds. Dive into a world of captivating digital experiences designed to propel your brand forward. From immersive web design to groundbreaking mobile apps, we craft interactive solutions that leave a lasting impact. Curious to explore the full spectrum of possibilities? Your brand’s future begins here – discover more about our program and unlock the potential of interactive media today.
                 </p>
                  <div class="col-start-2 col-span-1 m-col-start-6 m-col-span-2 l-col-start-6 l-col-span-2 l-col-start-6 l-col-span-2 button box">
-                    <a href="#">Learn more</a>
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next">Learn more</a>
                  </div>
 
             </div>
             </section>
             <section class="grid-con industry-night">
+                <h2 class="hidden">Industry Night</h2>
                 <div class= "mobile col-span-4 box">
                     <h3>THE ANNUAL</h3>
-                    <h3>FANSHAWE COLLEGE</h3>
+                    <h3 class="text-decor">FANSHAWE COLLEGE</h3>
                     <h2> INDUSTRY NIGHT</h2>
                     <p>The SDPA Industry Night for 2023 will showcase student projects and activities from the Interactive Media Design Program.
                         Meet and mingle with faculty and students, tour the facilities, and hear about upcoming projects and programs in the School of Digital and Performing Arts.
@@ -145,9 +134,10 @@
                      </div>
             </section>
             <section class="grid-con industry-night">
-                <div class= "tablet m-col-start-5 m-col-span-5 box">
+                <h2 class="hidden">Industry Night</h2>
+                <div class= "tablet m-col-start-4 m-col-span-6 box">
                     <h3>THE ANNUAL</h3>
-                    <h3>FANSHAWE COLLEGE</h3>
+                    <h3 class="text-decor">FANSHAWE COLLEGE</h3>
                     <h2> INDUSTRY NIGHT</h2>
                 </div>
                 <div class="tablet m-col-span-11 m-col-start-2 box">
@@ -186,9 +176,10 @@
             </section>
             <!--desktop-->
             <section class="grid-con industry-night">
+                <h2 class="hidden">Industry Night</h2>
                 <div class= "desktop l-col-start-5 l-col-span-5 box">
                     <h3>THE ANNUAL</h3>
-                    <h3>FANSHAWE COLLEGE</h3>
+                    <h3 class="text-decor">FANSHAWE COLLEGE</h3>
                     <h2> INDUSTRY NIGHT</h2>
                 </div>
                 <div class="desktop l-col-span-11 l-col-start-2 box">
@@ -203,7 +194,7 @@
                        <p>   Expert Insights: Gain invaluable knowledge from keynote speakers and panel discussions.</p>
                        <p>   Collaboration Opportunities: Explore potential partnerships and collaborations that could shape the future of interactive media.</p>
                         
-                       <h5>   Don't miss this exclusive opportunity to immerse yourself in the dynamic world of interactive media. Join us for a night of creativity, connection, and endless possibilities!</h5>
+                       <h5>Don't miss this exclusive opportunity to immerse yourself in the dynamic world of interactive media. Join us for a night of creativity, connection, and endless possibilities!</h5>
                 </div>
                 <div class="desktop l-col-span-4 l-col-start-8 box">
                     <img src="https://www.placeholder.co/250x300" alt="profile picture/work 2">
@@ -226,9 +217,10 @@
                     </div>
             </section>
             <section class="grid-con industry-night">
+                <h2 class="hidden">Industry Night</h2>
                 <div class= "xldesktop xl-col-start-5 xl-col-span-5 box">
                     <h3>THE ANNUAL</h3>
-                    <h3>FANSHAWE COLLEGE</h3>
+                    <h3 class="text-decor">FANSHAWE COLLEGE</h3>
                     <h2> INDUSTRY NIGHT</h2>
                 </div>
                 <div class="xldesktop xl-col-span-11 xl-col-start-2 box">
@@ -237,7 +229,7 @@
                         </p>
                 </div>
                 <div class="xldesktop xl-col-span-7 xl-col-start-1 box">
-                    <h4>What to Expect</h4>
+                    <h3>What to Expect</h4>
                     <p>Networking: Connect with industry leaders, creatives, and visionaries in the interactive media field.</p>
                        <p> Showcasing Talent: Witness the latest projects, designs, and cutting-edge technologies shaping the industry.</p>
                        <p>   Expert Insights: Gain invaluable knowledge from keynote speakers and panel discussions.</p>
@@ -271,66 +263,205 @@
                 <h2 class="hidden">description</h2>
                 <div class="col-span-4 m-col-start-2 m-col-span-10 l-col-start-2 l-col-span-10 xl-col-start-2 xl-col-span-10 box">
                     <h2>Level 4 Client Project</h2>
-                <p> Welcome to the Level 4 Bipolar Disorder Project – a deep dive into the intriguing realms of mood swings, creativity, and resilience. In this journey, we’ll navigate the rollercoaster-like experiences of individuals with bipolar disorder, explore its impact on creativity, and uncover the resilience that shines through the ups and downs. Get ready for a thought-provoking and enlightening ride into the world of Bipolar Disorder!</p>
+                <p> Welcome to the Level 4 Bipolar Disorder Project a deep dive into the intriguing realms of mood swings, creativity, and resilience. In this journey, we’ll navigate the rollercoaster-like experiences of individuals with bipolar disorder, explore its impact on creativity, and uncover the resilience that shines through the ups and downs. Get ready for a thought-provoking and enlightening ride into the world of Bipolar Disorder!</p>
                 <div class="col-start-2 col-span-1 m-col-start-6 m-col-span-2 l-col-start-6 l-col-span-2 l-col-start-6 l-col-span-2 button box">
-                    <a href="#">See more</a>
+                    <a href="studentPage.html">See more</a>
                  </div>
             </div>
             </section>
             <section class="grid-con industry-night">
                 <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 featured box">
                     <img src="https://www.placeholder.co/375x375" alt="industry night">
-                    <img src="https://www.placeholder.co/375x375">
                   </div>
                 <div class="col-span-4 m-col-span-4 m-col-start-6 l-col-span-4 l-col-start-6 xl-col-span-4 xl-col-start-6 box">
-                   <h2> Featured</h2>
-                   <h4> PROJECTS</h4>
+                   <h2 class="italics">Featured</h2>
+                   <h3 class="special-character">PROJECTS</h3>
                    <p>Lorem ipsum, dolor, consectetur</p> 
                    <div class="col-start-2 col-span-1 m-col-start-6 m-col-span-2 l-col-start-6 l-col-span-2 l-col-start-6 l-col-span-2 square-button box">
                     <a href="#">Student </a>
                  </div>
                 </div>
             </section>
-            <section class="grid-con">
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-            <h2> FEATURED STUDENT PROJECTS</h2>
-        </div>
-        </section>
+            <section class="contain">
+                <h2 class="hidden">AutoPlay Carousel</h2>
+            <section class="wrapper">
+                <h2 class="hidden">Student Portfolio Carousel</h2>
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                            <div class="img col-span-1 m-col-span-12 l-col-span-12">
+                                    <img src="./img/show-8.gif" alt="typography showcase" draggable="false">
+                            </div>          
+                    </li>
+                    <li class="card">
+                        <div class="img">
+                                <img src="./img/show-10.gif" alt="Animation showcase" draggable="false">
+                        </div>
+                    </li>
+                    <li class="card">
+                            <div class="img">
+                                <img src="./img/show-7.gif" alt="typography showcase" draggable="false">
+                            </div>
+                    </li>
+                    <li class="card">
+                            <div class="img">
+                                <img src="./img/show-9.png" alt="ad showcase" draggable="false">
+                            </div>
+                    </li>
+                    <li class="card">
+                            <div class="img">
+                                <img src="./img/show-3.jpg" alt="3d showcase" draggable="false">
+                            </div>
+                    </li>
+                    <li class="card">
+                            <div class="img">
+                                <img src="./img/show-6.png" alt="website showcase" draggable="false">
+                            </div>
+                    </li>
+                    <li class="card">
+                            <div class="img">
+                                <img src="./img/show-5.jpg" alt="website showcase" draggable="false">
+                            </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </section>
+            </section>
 
         <section class="grid-con">
+            <h2 class="hidden">Case Study</h2>
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-        <h2> CASE STUDY</h2>
+        <h3> CASE STUDY</h3>
+        <div>
+        <img src="./img/case_study.jpg" alt="robo women">
+        <p class="text-show">In this graphic design image case study, we explore the intricacies of a captivating visual concept where art and technology converge. The central image features a human face, its gaze transfixed by a cascade of intricate codes flowing through the eye, symbolizing the fusion of human creativity and digital innovation. This design was commissioned for a technology company seeking to convey its commitment to cutting-edge solutions and human-centered design. Our team meticulously crafted this image, ensuring that the codes were not only visually striking but also meaningful, representing the company’s dedication to transparency and precision in its work. Through a harmonious blend of digital artistry and symbolism, this case study offers a glimpse into how a single, powerful image can encapsulate a brand’s ethos, leaving a lasting impression on its audience and reinforcing its position at the forefront of the tech industry.</p>
+    </div>
     </div>
 </section>
 
 <section class="grid-con">
     <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box"> 
-        <h3>Testimonials</h3>
-        <div class="testimonials"> 
-         <div class="col-span-4 m-col-start-2 m-col-span-10 l-col-start-2 l-col-span-10 xl-col-start-2 xl-col-span-10 box">
-            <p>"I have learned so much from here...first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words e</p>
-            </div>
-            <div id=reviewer>
-                <p>~Jesica-Junior Developer for Google</p> 
-         </div>
-         </div>
+        <h3>TESTIMONIALS</h3>
       </div>
-
 </section>
-   <script src="js/main.js"></script>
-    <footer class="spacer">
-        <div class="grid-con">
-            <div class="col-start-3 col-span-1 m-col-start-5 m-col-span-2 l-col-start-5 l-col-span-2 xl-col-start-5 xl-col-span-2 box">
-                <h4>QUICK LINKS</h4>
-                <ul>
-                    <li><a href="#">Fanshawe Interactive Media Design</a></li>
-                    <li><a href="#">AskFanshawe</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                  </ul>
-                  </div>
-                  </div>
-                </footer>
+<section class="contain-test">
+    <h2 class="hidden">TESTIMONIALS</h2>
+    <section class="wrappertest">
+        <h2 class="hidden">Student Portfolio Carousel</h2>
+        <i id="leftArrow" class="fa-solid fa-angle-left"></i>
+        <ul class="carouseltest">
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/client-4.jpg" alt="man in suit" draggable="false">
+                </div>
+                        <p>The Fanshawe Interactive Media program helped me connect with future graduate Scott Nielson who made my dream website come alive!</p><br>
+                         <span class="test-name"> Annie Day</span><br>
+                        <span class="grad"> Graduate, Interactive Media Design</span>
+            </li>
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/client-2.jpg" alt="man" draggable="false">
+                </div>
+                    <article class="texttest col-span-2 m-col-span-7 l-col-span-7">
+                        <h3 class="hidden">TESTIMONIALS Statements</h3>
+                        <p>The Fanshawe Interactive Media program helped me connect with future graduate Scott Nielson who made my dream website come alive!</p><br>
+                         <span class="test-name"> Ben Redford</span><br>
+                      <span class="grad"> Graduate, Interactive Media Design</span>
+                    </article>  
+            </li>
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/client-1.jpg" alt="lady" draggable="false">
+                </div>
+                    <article class="texttest col-span-2 m-col-span-7 l-col-span-7">
+                        <h3 class="hidden">TESTIMONIALS Statements</h3>
+                        <p>The Fanshawe Interactive Media program helped me connect with future graduate Scott Nielson who made my dream website come alive!</p><br>
+                         <span class="test-name"> Rex Rover  </span><br>
+                      <span class="grad"> Graduate, Interactive Media Design</span>
+                    </article>  
+            </li>
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/client-3.jpg" alt="woman" draggable="false">
+                </div>
+                    <article class="texttest col-span-2 m-col-span-7 l-col-span-7">
+                        <h3 class="hidden">TESTIMONIALS Statements</h3>
+                        <p>The Fanshawe Interactive Media program helped me connect with future graduate Scott Nielson who made my dream website come alive!</p><br>
+                         <span class="test-name"> Klint Spint  </span><br>
+                      <span class="grad"> Graduate, Interactive Media Design</span>
+                    </article>  
+            </li>
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/img-5.jpg" alt="girl" draggable="false">
+                </div>
+                    <article class="texttest quote-area col-span-2 m-col-span-7 l-col-span-7">
+                        <h3 class="hidden">TESTIMONIALS Statements</h3>
+                        <p>The Fanshawe Interactive Media program helped me connect with future graduate Scott Nielson who made my dream website come alive!</p><br>
+                         <span class="test-name"> Irene Neilson  </span><br>
+                      <span class="grad"> Graduate, Interactive Media Design</span>
+                    </article>  
+            </li>
+            <li class="cardtest">
+                <div class="imgtest col-span-1 m-col-span-3 l-col-span-3">
+                    <img src="./img/client-5.jpg" alt="white girl" draggable="false">
+                </div>
+                    <article class="texttest col-span-2 m-col-span-7 l-col-span-7">
+                        <h3 class="hidden">TESTIMONIALS Statements</h3>
+                        <p>Fanshawe Interactive Media program helped me network with industry professional which hastened my career in Web Design!</p><br>
+                         <span class="test-name"> Beatrice Clank  </span><br>
+                      <span class="grad"> Graduate, Interactive Media Design</span>
+                    </article>  
+            </li>
+        </ul>
+        <i id="rightArrow" class="fa-solid fa-angle-right"></i>
+    </section>
+</section>
+<footer class="spacer">
+    <section class="grid-con">
+        <h2 class="hidden">Footer</h2>
+        <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-4 footer-logo box">
+            <img src="img/7C110AF6.png" alt="Fanshawe logo">
+        </div>
+        <nav class="col-start-3 col-span-2 m-col-start-6 m-col-end-8 l-col-start-5 l-col-end-8 xl-col-start-5 xl-col-end-8 box-nav">
+            <ul>
+                <li><h3 class="title-foot">QUICK LINKS</h3></li>
+                <li><a href="#">Fanshawe Interactive</a></li>
+                <li><a href="#">AskFanshawe</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Privacy Policy </a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </nav>
+            <nav class="col-span-4 m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
+                <ul class="menu-social">
+                <li>
+                    <a href="https://twitter.com/FanshaweCollege?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <img class="icons" src="./img/twitter.svg" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/FanshaweCollege/">
+                    <img class="icons" src="./img/facebook.svg" alt="facebook"></a>
+                </li>
+                <li><a href="https://www.youtube.com/@Fanshawe-College">
+                    <img class="icons" src="./img/youtube.svg" alt="youtube"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/fanshawecollege/?hl=en">
+                    <img class="icons" src="./img/instagram.svg" alt="instagram"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/school/fanshawe-college/?originalSubdomain=ca">
+                    <img class="icons" src="img/linkedin-in.svg" alt="Linkedin"></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="grid-con">
+            <h2 class="hidden">Copyright</h2>
+              <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                <p class="copyright"> 2023 Fanshawe All Rights Reserved</p>
+              </div>
+            </section>
+            </footer>
+                <script src="js/main.js"></script>
             </body> 
           </html>  
