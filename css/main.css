@@ -501,11 +501,16 @@ footer{
 .footer-logo {
   border-right:solid #65666A 5px;
 }
+footer nav{
+  background-color: #E3E3E3;
+  display: block;
+}
 footer li a{
   color:#3366CC;
   display:block;
   text-align: left;
   text-decoration: none;
+  background-color: #E3E3E3;
   
 }
 #copyright p{
